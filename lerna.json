@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "useNx": true,
+  "packages": ["apps/*", "libs/*"],
+  "version": "0.0.0",
+  "command": {
+    "version": {
+      "allowBranch": ["main"],
+      "conventionalCommits": true,
+      "changelog": true
+    }
+  }
+}

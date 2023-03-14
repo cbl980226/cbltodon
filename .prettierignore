@@ -1,0 +1,9 @@
+# Add files here to ignore them from prettier formatting
+
+CHANGELOG.md
+pnpm-lock.yaml
+
+dist
+coverage
+.next
+

@@ -1,0 +1,91 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "npmScope": "cbltodon",
+  "cli": {
+    "packageManager": "pnpm"
+  },
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "libs"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "NTc2NzcxZDctMTZiMi00MDQ3LWFjMWEtMTU5OGYyYWY3ZGM3fHJlYWQ=",
+        "cacheDirectory": "tmp/nx-cache",
+        "parallel": 1
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    },
+    "test": {
+      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"]
+    },
+    "e2e": {
+      "inputs": ["default", "^production"]
+    },
+    "lint": {
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json",
+        "{workspaceRoot}/.eslintignore"
+      ]
+    }
+  },
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "production": [
+      "default",
+      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+      "!{projectRoot}/tsconfig.spec.json",
+      "!{projectRoot}/jest.config.[jt]s",
+      "!{projectRoot}/.eslintrc.json"
+    ],
+    "sharedGlobals": ["{workspaceRoot}/babel.config.json"]
+  },
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      },
+      "component": {
+        "directory": "components",
+        "export": false,
+        "flat": true,
+        "pascalCaseFiles": false,
+        "style": "none",
+        "skipTests": true
+      },
+      "hook": {
+        "directory": "hooks",
+        "export": false,
+        "flat": true,
+        "pascalCaseFiles": false,
+        "style": "none",
+        "skipTests": true
+      },
+      "library": {
+        "bundler": "none",
+        "style": "none",
+        "unitTestRunner": "jest"
+      }
+    },
+    "@nrwl/next": {
+      "application": {
+        "linter": "eslint",
+        "style": "css"
+      },
+      "library": {
+        "bundler": "none",
+        "style": "none",
+        "unitTestRunner": "jest"
+      }
+    }
+  }
+}
