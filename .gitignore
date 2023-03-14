@@ -42,5 +42,5 @@ Thumbs.db
 # Next.js
 .next
 
-# Nx Cloud
-nx-cloud.env
+# Local Env
+.env

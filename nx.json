@@ -14,7 +14,6 @@
       "options": {
         "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "NTc2NzcxZDctMTZiMi00MDQ3LWFjMWEtMTU5OGYyYWY3ZGM3fHJlYWQ=",
-        "cacheDirectory": "/tmp/nx-cache",
         "parallel": 1
       }
     }
