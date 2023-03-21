@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "rootDir": ".",
     "allowJs": true,
-    "paths": {}
+    "paths": {
+      "@cbltodon/ui-theme": ["libs/ui-theme/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

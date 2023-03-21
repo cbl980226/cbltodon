@@ -10,6 +10,7 @@
   "private": true,
   "dependencies": {
     "next": "13.1.1",
+    "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tslib": "^2.3.0"
@@ -25,7 +26,12 @@
     "@nrwl/next": "15.8.7",
     "@nrwl/nx-cloud": "15.2.3",
     "@nrwl/react": "15.8.7",
+    "@nrwl/storybook": "15.8.7",
     "@nrwl/workspace": "15.8.7",
+    "@storybook/addon-essentials": "^7.0.0-beta.43",
+    "@storybook/core-server": "^7.0.0-beta.43",
+    "@storybook/react": "^7.0.0-beta.43",
+    "@storybook/react-vite": "^7.0.0-beta.43",
     "@swc/core": "^1.2.173",
     "@swc/jest": "0.2.20",
     "@testing-library/react": "14.0.0",
