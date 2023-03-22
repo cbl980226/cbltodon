@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import ThemeProvider from './theme-provider'
+import { ThemeProvider } from 'next-themes'
 import ThemeSwitch from './theme-switch'
 
 const meta: Meta<typeof ThemeSwitch> = {
