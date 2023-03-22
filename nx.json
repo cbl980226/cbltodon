@@ -96,6 +96,14 @@
         "style": "none",
         "unitTestRunner": "jest"
       }
+    },
+    "@nrwl/storybook": {
+      "configuration": {
+        "bundler": "vite",
+        "tsConfiguration": true,
+        "storybook7betaConfiguration": true,
+        "storybook7UiFramework": "@storybook/react-vite"
+      }
     }
   }
 }

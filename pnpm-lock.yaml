@@ -14,6 +14,7 @@ specifiers:
   '@nrwl/storybook': 15.8.7
   '@nrwl/workspace': 15.8.7
   '@storybook/addon-essentials': ^7.0.0-beta.43
+  '@storybook/core-common': ^7.0.0-beta.43
   '@storybook/core-server': ^7.0.0-beta.43
   '@storybook/react': ^7.0.0-beta.43
   '@storybook/react-vite': ^7.0.0-beta.43
@@ -83,6 +84,7 @@ devDependencies:
   '@nrwl/storybook': 15.8.7_mzofnd2rddtqq2numiqcxqxll4
   '@nrwl/workspace': 15.8.7_4avqm5jdqifeidt4l6bxxohh5i
   '@storybook/addon-essentials': 7.0.0-rc.5_biqbaboplfbrettd7655fr4n2y
+  '@storybook/core-common': 7.0.0-rc.5
   '@storybook/core-server': 7.0.0-rc.5
   '@storybook/react': 7.0.0-rc.5_ygqkwb4gg3aean7xjfdauovyqq
   '@storybook/react-vite': 7.0.0-rc.5_6uylmgnzlqpeawp7a5cr5koi6y
