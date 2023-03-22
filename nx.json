@@ -17,6 +17,7 @@
           "lint",
           "test",
           "e2e",
+          "type-check",
           "build-storybook"
         ],
         "accessToken": "NTc2NzcxZDctMTZiMi00MDQ3LWFjMWEtMTU5OGYyYWY3ZGM3fHJlYWQ=",

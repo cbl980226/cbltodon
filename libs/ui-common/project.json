@@ -5,6 +5,14 @@
   "projectType": "library",
   "tags": [],
   "targets": {
+    "type-check": {
+      "executor": "@nrwl/js:tsc",
+      "options": {
+        "outputPath": "dist/out-tsc/libs/ui-common",
+        "main": "libs/ui-common/src/index.ts",
+        "tsConfig": "libs/ui-common/tsconfig.lib.json"
+      }
+    },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
