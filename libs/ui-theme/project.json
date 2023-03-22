@@ -6,12 +6,9 @@
   "tags": [],
   "targets": {
     "type-check": {
-      "executor": "@nrwl/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "executor": "nx:run-commands",
       "options": {
-        "outputPath": "dist/type-check/libs/ui-theme",
-        "main": "libs/ui-theme/src/index.ts",
-        "tsConfig": "libs/ui-theme/tsconfig.lib.json"
+        "command": "tsc --noEmit -p libs/ui-theme/tsconfig.lib.json"
       }
     },
     "lint": {

@@ -5,12 +5,9 @@
   "projectType": "library",
   "targets": {
     "type-check": {
-      "executor": "@nrwl/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "executor": "nx:run-commands",
       "options": {
-        "outputPath": "dist/type-check/libs/utils",
-        "main": "libs/utils/src/index.ts",
-        "tsConfig": "libs/utils/tsconfig.lib.json"
+        "command": "tsc --noEmit -p libs/utils/tsconfig.lib.json"
       }
     },
     "lint": {
