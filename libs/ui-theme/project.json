@@ -7,8 +7,9 @@
   "targets": {
     "type-check": {
       "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/out-tsc/libs/ui-theme",
+        "outputPath": "dist/type-check/libs/ui-theme",
         "main": "libs/ui-theme/src/index.ts",
         "tsConfig": "libs/ui-theme/tsconfig.lib.json"
       }
