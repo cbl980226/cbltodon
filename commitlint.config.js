@@ -5,6 +5,7 @@ const scopes = [
   { value: 'repo',          name: 'repo:            anything related to managing the repo itself' },
   { value: 'testing',       name: 'testing:         anything testing specific (e.g. jest or cypress)' },
   { value: 'web',           name: 'web:             anything Web specific' },
+  { value: 'utils',         name: 'utils:           anything Utils specific' },
   { value: 'ui-common',     name: 'ui-common:       anything Ui Common specific' },
   { value: 'ui-theme',      name: 'ui-theme:        anything Ui Theme specific' },
 ];

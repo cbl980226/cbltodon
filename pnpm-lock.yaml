@@ -29,6 +29,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.36.1
   autoprefixer: 10.4.13
   babel-jest: ^29.4.1
+  clsx: ^1.2.1
   commitlint: ^17.4.4
   cypress: ^12.2.0
   cz-git: ^1.6.0
@@ -56,6 +57,7 @@ specifiers:
   react-dom: 18.2.0
   react-test-renderer: 18.2.0
   sass: 1.55.0
+  tailwind-merge: ^1.10.0
   tailwindcss: 3.2.7
   ts-jest: ^29.0.5
   ts-node: 10.9.1
@@ -64,10 +66,12 @@ specifiers:
   typescript: ~4.9.5
 
 dependencies:
+  clsx: 1.2.1
   next: 13.1.1_dzpvyy6gso62lrgghv4hzpfxhq
   next-themes: 0.2.1_q76c2b4vyoegvsbrcwkfvimnai
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  tailwind-merge: 1.10.0
   tslib: 2.5.0
 
 devDependencies:
@@ -6176,6 +6180,11 @@ packages:
     resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
     engines: {node: '>=0.8'}
     dev: true
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
 
   /co/4.6.0:
     resolution: {integrity: sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ==}
@@ -13445,6 +13454,10 @@ packages:
       '@pkgr/utils': 2.3.1
       tslib: 2.5.0
     dev: true
+
+  /tailwind-merge/1.10.0:
+    resolution: {integrity: sha512-WFnDXSS4kFTZwjKg5/oZSGzBRU/l+qcbv5NVTzLUQvJ9yovDAP05h0F2+ZFW0Lw9EcgRoc2AfURUdZvnEFrXKg==}
+    dev: false
 
   /tailwindcss/3.2.7_aesdjsunmf4wiehhujt67my7tu:
     resolution: {integrity: sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==}
