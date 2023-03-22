@@ -1,1 +1,1 @@
-export * from './lib/ui-common'
+export * as DropdownMenu from './lib/dropdown-menu'
