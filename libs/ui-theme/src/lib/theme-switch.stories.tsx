@@ -8,7 +8,7 @@ const meta: Meta<typeof ThemeSwitch> = {
   component: ThemeSwitch,
   decorators: [
     Story => (
-      <ThemeProvider>
+      <ThemeProvider attribute="class">
         <Story />
       </ThemeProvider>
     )

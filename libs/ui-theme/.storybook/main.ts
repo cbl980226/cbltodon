@@ -1,4 +1,8 @@
-const config = {
+import type { StorybookConfig } from '@storybook/react-vite'
+import { mergeConfig } from 'vite'
+import viteTsConfigPaths from 'vite-tsconfig-paths'
+
+const config: StorybookConfig = {
   stories: ['../src/lib/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
   addons: ['@storybook/addon-essentials'],
   framework: {
@@ -8,6 +12,15 @@ const config = {
         viteConfigPath: ''
       }
     }
+  },
+  async viteFinal(config) {
+    return mergeConfig(config, {
+      plugins: [
+        viteTsConfigPaths({
+          root: '../../../'
+        })
+      ]
+    })
   }
 }
 
