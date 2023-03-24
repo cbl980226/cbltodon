@@ -10,6 +10,7 @@
   "private": true,
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.0.4",
+    "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
     "lucide-react": "^0.127.0",
     "next": "13.1.1",
@@ -65,7 +66,6 @@
     "jest-environment-jsdom": "^29.4.1",
     "lint-staged": "^13.2.0",
     "nx": "15.8.7",
-    "nx-ignore": "15.6.0",
     "postcss": "8.4.21",
     "prettier": "^2.6.2",
     "pretty-quick": "^3.1.3",

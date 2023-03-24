@@ -30,6 +30,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.36.1
   autoprefixer: 10.4.13
   babel-jest: ^29.4.1
+  class-variance-authority: ^0.4.0
   clsx: ^1.2.1
   commitlint: ^17.4.4
   cypress: ^12.2.0
@@ -51,7 +52,6 @@ specifiers:
   next: 13.1.1
   next-themes: ^0.2.1
   nx: 15.8.7
-  nx-ignore: 15.6.0
   postcss: 8.4.21
   prettier: ^2.6.2
   pretty-quick: ^3.1.3
@@ -71,6 +71,7 @@ specifiers:
 
 dependencies:
   '@radix-ui/react-dropdown-menu': 2.0.4_zula6vjvt3wdocc4mwcxqa6nzi
+  class-variance-authority: 0.4.0_typescript@4.9.5
   clsx: 1.2.1
   lucide-react: 0.127.0_react@18.2.0
   next: 13.1.1_dzpvyy6gso62lrgghv4hzpfxhq
@@ -126,7 +127,6 @@ devDependencies:
   jest-environment-jsdom: 29.5.0
   lint-staged: 13.2.0
   nx: 15.8.7_@swc+core@1.3.39
-  nx-ignore: 15.6.0
   postcss: 8.4.21
   prettier: 2.8.4
   pretty-quick: 3.1.3_prettier@2.8.4
@@ -6444,6 +6444,17 @@ packages:
     resolution: {integrity: sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==}
     dev: true
 
+  /class-variance-authority/0.4.0_typescript@4.9.5:
+    resolution: {integrity: sha512-74enNN8O9ZNieycac/y8FxqgyzZhZbxmCitAtAeUrLPlxjSd5zA7LfpprmxEcOmQBnaGs5hYhiSGnJ0mqrtBLQ==}
+    peerDependencies:
+      typescript: '>= 4.5.5 < 5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      typescript: 4.9.5
+    dev: false
+
   /clean-stack/2.2.0:
     resolution: {integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==}
     engines: {node: '>=6'}
@@ -11622,14 +11633,6 @@ packages:
     resolution: {integrity: sha512-90yv+6538zuvUMnN+zCr8LuV6bPFdq50304114vJYJ8RDyK8D5O9Phpbd6SZWgI7PwzmmfN1upeOJlvybDSgCw==}
     dev: true
 
-  /nx-ignore/15.6.0:
-    resolution: {integrity: sha512-lsoxwjnCi01vSuKfaZuY1T5BK1TA88tYvDHFGVyOjVVb90volD1x0evp3mBAjSXHk3jQyb68Ln2UN+7or4zFNg==}
-    hasBin: true
-    dependencies:
-      '@swc/helpers': 0.4.14
-      fs-extra: 10.1.0
-    dev: true
-
   /nx/15.8.7_@swc+core@1.3.39:
     resolution: {integrity: sha512-u6p/1gU20WU61orxK7hcXBsVspPHy3X66XVAAakkYcaOBlsJhJrR7Og191qIyjEkqEWmcekiDQVw3D6XfagL4Q==}
     hasBin: true
@@ -14348,7 +14351,6 @@ packages:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /uglify-js/3.17.4:
     resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
