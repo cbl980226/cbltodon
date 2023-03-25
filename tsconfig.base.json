@@ -18,6 +18,7 @@
     "allowJs": true,
     "paths": {
       "@cbltodon/ui-common": ["libs/ui-common/src/index.ts"],
+      "@cbltodon/ui-masto": ["libs/ui-masto/src/index.ts"],
       "@cbltodon/ui-theme": ["libs/ui-theme/src/index.ts"],
       "@cbltodon/utils": ["libs/utils/src/index.ts"]
     }
