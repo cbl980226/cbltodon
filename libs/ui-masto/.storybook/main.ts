@@ -1,6 +1,7 @@
 import type { StorybookConfig } from '@storybook/react-vite'
 import { mergeConfig } from 'vite'
 import viteTsConfigPaths from 'vite-tsconfig-paths'
+import path from 'node:path'
 
 const config: StorybookConfig = {
   stories: ['../src/lib/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
@@ -17,7 +18,7 @@ const config: StorybookConfig = {
     return mergeConfig(config, {
       plugins: [
         viteTsConfigPaths({
-          root: '../../../'
+          root: path.join(__dirname, '../../../')
         })
       ]
     })
