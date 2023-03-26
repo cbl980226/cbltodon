@@ -12,6 +12,7 @@
     "@iconify/react": "^4.1.0",
     "@radix-ui/react-dropdown-menu": "^2.0.4",
     "@radix-ui/react-tooltip": "^1.0.5",
+    "@reactuses/core": "^2.2.3",
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
     "lucide-react": "^0.127.0",
