@@ -8,6 +8,7 @@ const scopes = [
   { value: 'utils',         name: 'utils:           anything Utils specific' },
   { value: 'ui-common',     name: 'ui-common:       anything Ui Common specific' },
   { value: 'ui-theme',      name: 'ui-theme:        anything Ui Theme specific' },
+  { value: 'ui-masto',      name: 'ui-masto:        anything Ui Masto specific' },
 ];
 
 // prettier-ignore

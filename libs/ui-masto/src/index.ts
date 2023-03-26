@@ -1,1 +1,1 @@
-export * from './lib/ui-masto'
+export * from './lib/status/status-action-button'

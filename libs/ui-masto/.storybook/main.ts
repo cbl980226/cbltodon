@@ -4,7 +4,13 @@ import viteTsConfigPaths from 'vite-tsconfig-paths'
 import path from 'node:path'
 
 const config: StorybookConfig = {
-  stories: ['../src/lib/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
+  stories: [
+    {
+      directory: '../src/lib',
+      titlePrefix: 'UI-MASTO',
+      files: '**/*.stories.@(js|jsx|ts|tsx|mdx)'
+    }
+  ],
   addons: ['@storybook/addon-essentials'],
   framework: {
     name: '@storybook/react-vite',
