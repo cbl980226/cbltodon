@@ -17,5 +17,9 @@ export default meta
 type Story = StoryObj<typeof CommonPaginator>
 
 export const Demo: Story = {
-  render: () => <CommonPaginator paginator={paginator} />
+  render: () => (
+    <CommonPaginator paginator={paginator}>
+      {status => <div>{JSON.stringify({ status })}</div>}
+    </CommonPaginator>
+  )
 }

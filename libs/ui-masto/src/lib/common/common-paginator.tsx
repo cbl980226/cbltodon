@@ -1,4 +1,4 @@
-import type { FC } from 'react'
+import type { FC, ReactNode } from 'react'
 import type { Paginator, mastodon } from 'masto'
 import { usePaginator } from '@cbltodon/hooks'
 import { Icon } from '@iconify/react'
@@ -7,20 +7,18 @@ export interface CommonPaginatorProps {
     mastodon.v1.Status[],
     mastodon.v1.ListAccountStatusesParams
   >
+  children?: StatusComponent
 }
 
-export const CommonPaginator: FC<CommonPaginatorProps> = ({ paginator }) => {
+export const CommonPaginator: FC<CommonPaginatorProps> = ({
+  paginator,
+  children
+}) => {
   const { items, state, endAnchor, error } = usePaginator(paginator)
 
   return (
     <>
-      {items.map(status => {
-        return (
-          <div key={status.id} className="border-solid border-t">
-            {JSON.stringify(status)}
-          </div>
-        )
-      })}
+      {children && items.map(status => children(status))}
       <div ref={endAnchor}></div>
       {state === 'loading' && (
         <div className="p-5 text-center flex flex-col items-center animate-pulse">
@@ -39,5 +37,7 @@ export const CommonPaginator: FC<CommonPaginatorProps> = ({ paginator }) => {
     </>
   )
 }
+
+export type StatusComponent = (status: mastodon.v1.Status) => ReactNode
 
 export default CommonPaginator
