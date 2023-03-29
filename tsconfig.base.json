@@ -8,6 +8,7 @@
     "resolveJsonModule": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "esModuleInterop": true,
     "importHelpers": true,
     "module": "esnext",
     "lib": ["es2019", "dom"],
