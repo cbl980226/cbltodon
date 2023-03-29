@@ -19,7 +19,7 @@ const types = [
   { value: 'docs',          name: 'docs:     📝  Documentation only changes', emoji: ':memo:' },
   { value: 'style',         name: 'style:    💄  Changes that do not affect the meaning of the code', emoji: ':lipstick:' },
   { value: 'test',          name: 'test:     ✅  Adding missing tests or correcting existing tests', emoji: ':white_check_mark:' },
-  { value: 'ci',            name: 'ci:       🍥  Changes to our CI configuration files and scripts', emoji: ':fish_cake:' },
+  { value: 'ci',            name: 'ci:       🤖  Changes to our CI configuration files and scripts', emoji: ':fish_cake:' },
   { value: 'cleanup',       name: 'cleanup:  🛁  A code change that neither fixes a bug nor adds a feature', emoji: ':bathtub:' },
   { value: 'chore',         name: "chore:    🔨  Other changes that don't modify src or test files", emoji: ':hammer:' }
 ]
