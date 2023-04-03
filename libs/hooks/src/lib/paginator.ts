@@ -49,7 +49,7 @@ export function usePaginator<T, P>(paginator: Paginator<T[], P>) {
       loadNext()
     }
     // eslint-disable-next-line
-  }, [isInScreen])
+  }, [isInScreen, state])
 
   return {
     items,
