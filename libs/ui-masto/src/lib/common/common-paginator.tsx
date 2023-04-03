@@ -1,4 +1,4 @@
-import type { FC, ReactNode } from 'react'
+import { FC, Fragment, ReactNode } from 'react'
 import type { Paginator, mastodon } from 'masto'
 import { usePaginator } from '@cbltodon/hooks'
 import { Icon } from '@iconify/react'
@@ -18,7 +18,10 @@ export const CommonPaginator: FC<CommonPaginatorProps> = ({
 
   return (
     <>
-      {children && items.map(status => children(status))}
+      {children &&
+        items.map(status => (
+          <Fragment key={status.id}>{children(status)}</Fragment>
+        ))}
       <div ref={endAnchor}></div>
       {state === 'loading' && (
         <div className="p-5 text-center flex flex-col items-center animate-pulse">
