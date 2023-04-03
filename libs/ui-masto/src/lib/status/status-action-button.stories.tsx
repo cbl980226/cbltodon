@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import StatusActionButton from './status-action-button'
 
 const meta: Meta<typeof StatusActionButton> = {
-  title: 'StatusActionButton',
+  title: 'Status/StatusActionButton',
   component: StatusActionButton
 }
 
@@ -16,7 +16,7 @@ export const Reply: Story = {
       icon="ri:chat-1-line"
       active={true}
       hover="blue"
-      count={1}
+      text={1}
       content="Reply"
     />
   )
@@ -29,7 +29,7 @@ export const Boost: Story = {
       active={true}
       activeIcon="ri:repeat-fill"
       hover="green"
-      count={2}
+      text={2}
       content="Boost"
     />
   )
@@ -42,7 +42,7 @@ export const Favorite: Story = {
       active={true}
       activeIcon="ri:heart-3-fill"
       hover="rose"
-      count={3}
+      text={3}
       content="Favorite"
     />
   )

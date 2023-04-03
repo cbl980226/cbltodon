@@ -80,7 +80,7 @@ export interface StatusActionButtonProps
   icon: IconifyIcon | string
   activeIcon?: IconifyIcon | string
   content?: string
-  count?: number
+  text?: string | number
   className?: string
 }
 
@@ -93,7 +93,7 @@ export const StatusActionButton: FC<StatusActionButtonProps> = ({
   activeIcon,
   className,
   content,
-  count
+  text
 }) => {
   return (
     <Tooltip.Common className="text-xs" content={content}>
@@ -124,7 +124,7 @@ export const StatusActionButton: FC<StatusActionButtonProps> = ({
         </div>
 
         <span className="text-secondary-light hover:text-secondary-light">
-          {count}
+          {text}
         </span>
       </button>
     </Tooltip.Common>
