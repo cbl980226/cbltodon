@@ -22,6 +22,9 @@ const config: StorybookConfig = {
   },
   async viteFinal(config) {
     return mergeConfig(config, {
+      define: {
+        'process.env': {}
+      },
       plugins: [
         viteTsConfigPaths({
           root: path.join(__dirname, '../../../')

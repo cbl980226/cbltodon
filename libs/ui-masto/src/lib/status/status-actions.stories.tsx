@@ -10,7 +10,7 @@ const masto = await login({
 const paginator = masto.v1.timelines.listPublic({ limit: 10 })
 
 const meta: Meta = {
-  title: 'Status/StatusAction'
+  title: 'Status/StatusActions'
 }
 
 export default meta
