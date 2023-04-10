@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 import { PlusIcon } from 'lucide-react'
-import * as Tooltip from './tooltip'
+import * as Tooltip from './Tooltip'
 
 const meta: Meta = {
   title: 'Tooltip'

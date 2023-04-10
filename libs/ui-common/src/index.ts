@@ -1,3 +1,3 @@
-export * from './lib/button'
-export * as DropdownMenu from './lib/dropdown-menu'
-export * as Tooltip from './lib/tooltip'
+export * from './lib/Button'
+export * as DropdownMenu from './lib/DropdownMenu'
+export * as Tooltip from './lib/Tooltip'
