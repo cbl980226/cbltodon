@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import CommonRichContent from './common-rich-content'
+import CommonRichContent from './CommonRichContent'
 
 const meta: Meta = {
   title: 'Common/RichContent'

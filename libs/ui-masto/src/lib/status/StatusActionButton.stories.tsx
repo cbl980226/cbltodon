@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import StatusActionButton from './status-action-button'
+import StatusActionButton from './StatusActionButton'
 
 const meta: Meta<typeof StatusActionButton> = {
   title: 'Status/StatusActionButton',

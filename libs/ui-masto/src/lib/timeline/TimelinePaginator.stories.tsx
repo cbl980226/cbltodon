@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import TimelinePaginator from './timeline-paginator'
+import TimelinePaginator from './TimelinePaginator'
 import { login } from 'masto'
 
 const masto = await login({

@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
+import CommonPaginator from './CommonPaginator'
 import { login } from 'masto'
-import CommonPaginator from '../common/common-paginator'
-import StatusBody from './status-body'
 
 const masto = await login({
   url: 'https://mastodon.social/'
@@ -10,17 +9,17 @@ const masto = await login({
 const paginator = masto.v1.timelines.listPublic({ limit: 10 })
 
 const meta: Meta = {
-  title: 'Status/StatusBody'
+  title: 'Common/Paginator'
 }
 
 export default meta
 
-type Story = StoryObj<typeof StatusBody>
+type Story = StoryObj<typeof CommonPaginator>
 
-export const Default: Story = {
+export const Demo: Story = {
   render: () => (
     <CommonPaginator paginator={paginator}>
-      {status => <StatusBody status={status} />}
+      {status => <div>{JSON.stringify({ status })}</div>}
     </CommonPaginator>
   )
 }

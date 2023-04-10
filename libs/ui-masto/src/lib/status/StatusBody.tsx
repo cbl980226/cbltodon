@@ -1,6 +1,6 @@
 import { mastodon } from 'masto'
 import { FC } from 'react'
-import CommonRichContent from '../common/common-rich-content'
+import CommonRichContent from '../common/CommonRichContent'
 
 interface StatusBodyProps {
   status: mastodon.v1.Status

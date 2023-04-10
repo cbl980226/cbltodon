@@ -1,6 +1,6 @@
 import { mastodon, Paginator } from 'masto'
 import { FC } from 'react'
-import CommonPaginator from '../common/common-paginator'
+import CommonPaginator from '../common/CommonPaginator'
 
 interface TimelinePaginatorProps {
   paginator: Paginator<

@@ -1,6 +1,6 @@
 import { mastodon } from 'masto'
 import { FC } from 'react'
-import StatusActionButton from './status-action-button'
+import StatusActionButton from './StatusActionButton'
 
 interface StatusActionProps {
   status: mastodon.v1.Status
