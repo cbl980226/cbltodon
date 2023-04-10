@@ -1,1 +1,1 @@
-export * from './lib/theme-switch'
+export * from './lib/ThemeSwitch'
